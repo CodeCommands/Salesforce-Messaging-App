@@ -1,0 +1,23 @@
+<template>
+    <template if:true={messages}>
+        <div class="message-list-container">
+            <div class="message-list">
+                <template for:each={messages} for:item="message">
+                    <div key={message.Id} class={message.messageItemClass}>
+                        <div class={message.messageBubbleClass}>
+                            <div class="message-header">
+                                <lightning-icon icon-name="standard:messaging_user" alternative-text="messaging_user" size="small" title="messaging_user"></lightning-icon>
+                                <div class="message-sender">{message.SenderName}</div>
+                                <div class="message-timestamp">{message.CreatedDate}</div>
+                            </div>
+                            <lightning-formatted-rich-text value={message.Content}></lightning-formatted-rich-text>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </template>
+    <template if:true={error}>
+        <p>{error}</p>
+    </template>
+</template>

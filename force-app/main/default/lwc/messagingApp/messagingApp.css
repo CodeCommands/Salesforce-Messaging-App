@@ -1,0 +1,19 @@
+.button-container {
+    margin-bottom: 1rem; /* Adjust the gap between the buttons and the correspondence list */
+}
+
+.new-conversation-button {
+    margin-right: 1rem; /* Adjust the gap between the Start New Conversation button and the View Previous Conversations button */
+}
+
+.correspondence-list-container {
+    margin-top: 1rem; /* Adjust the gap between the buttons and the correspondence list */
+}
+
+.slds-modal__container {
+    width: 50%;
+}
+
+.slds-backdrop_open {
+    display: block;
+}

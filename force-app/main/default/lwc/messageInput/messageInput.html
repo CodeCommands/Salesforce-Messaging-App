@@ -1,0 +1,6 @@
+<template>
+    <div class="message-input-container">
+        <lightning-input-rich-text label="Message" value={messageContent} onchange={handleInputChange}></lightning-input-rich-text>
+        <lightning-button label="Send" onclick={handleSendMessage}></lightning-button>
+    </div>
+</template>

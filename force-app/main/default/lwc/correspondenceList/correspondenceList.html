@@ -1,0 +1,16 @@
+<template>
+    <template if:true={correspondences}>
+        <template for:each={correspondences} for:item="correspondence">
+            <div key={correspondence.Id} data-id={correspondence.Id} onclick={handleCorrespondenceClick} class="correspondence-item">
+                <div class="correspondence-header">
+                    <div class="correspondence-name">{correspondence.Name}</div>
+                    <div class="correspondence-timestamp">{correspondence.LastMessageTimestamp__c}</div>
+                </div>
+                <div class="correspondence-preview">{correspondence.Preview}</div>
+            </div>
+        </template>
+    </template>
+    <template if:true={error}>
+        <p>{error}</p>
+    </template>
+</template>

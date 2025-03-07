@@ -1,0 +1,22 @@
+.correspondence-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.correspondence-item:hover {
+    background-color: #f5f5f5;
+}
+.correspondence-header {
+    display: flex;
+    justify-content: space-between;
+}
+.correspondence-name {
+    font-weight: bold;
+}
+.correspondence-timestamp {
+    font-size: 0.8em;
+    color: #888;
+}
+.correspondence-preview {
+    color: #666;
+}
